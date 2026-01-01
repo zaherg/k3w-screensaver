@@ -1,0 +1,71 @@
+{
+  "current_condition": [
+    {
+      "temp_C": "2",
+      "FeelsLikeC": "0",
+      "humidity": "70",
+      "weatherDesc": [
+        { "value": "Partly cloudy" }
+      ],
+      "weatherCode": "116",
+      "windspeedKmph": "15",
+      "winddir16Point": "NW",
+      "pressure": "1020",
+      "localObsDateTime": "2026-01-01 12:30 PM",
+      "chanceofrain": "60",
+      "cloudcover": "40"
+    }
+  ],
+  "weather": [
+    {
+      "date": "2026-01-01",
+      "maxtempC": "4",
+      "mintempC": "-1",
+      "astronomy": [
+        { "sunrise": "08:30 AM", "sunset": "05:48 PM" }
+      ],
+      "hourly": [
+        {
+          "time": "0",
+          "chanceofrain": "15",
+          "weatherDesc": [ { "value": "Clear" } ],
+          "weatherCode": "113"
+        },
+        {
+          "time": "1200",
+          "chanceofrain": "45",
+          "weatherDesc": [ { "value": "Partly Cloudy" } ],
+          "weatherCode": "116"
+        },
+        {
+          "time": "2100",
+          "chanceofrain": "5",
+          "weatherDesc": [ { "value": "Clear" } ],
+          "weatherCode": "113"
+        }
+      ]
+    },
+    {
+      "date": "2026-01-02",
+      "maxtempC": "3",
+      "mintempC": "-2",
+      "astronomy": [
+        { "sunrise": "08:31 AM", "sunset": "05:49 PM" }
+      ],
+      "hourly": [
+        {
+          "time": "0",
+          "chanceofrain": "10",
+          "weatherDesc": [ { "value": "Overcast" } ],
+          "weatherCode": "122"
+        },
+        {
+          "time": "1200",
+          "chanceofrain": "55",
+          "weatherDesc": [ { "value": "Light snow" } ],
+          "weatherCode": "338"
+        }
+      ]
+    }
+  ]
+}
