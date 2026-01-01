@@ -51,7 +51,7 @@ Use your host's crontab to run the container on a schedule. Because the CLI uplo
 
 One-line run (no cron):
 ```bash
-docker run --rm --name k3w-screensaver --env-file /path/to/.env ghcr.io/zaherg/k3w-screensaver:main screensaver render --output /output/kindle-weather.png
+docker run --rm --name k3w-screensaver --env-file /path/to/.env ghcr.io/zaherg/k3w-screensaver:main render --output /output/kindle-weather.png
 ```
 
 Edit your crontab:
@@ -60,7 +60,7 @@ crontab -e
 ```
 Example entry (run at minute 58 of every hour, kill any stuck run, then render):
 ```bash
-58 * * * * /usr/bin/docker rm -f k3w-screensaver >/dev/null 2>&1 || true; /usr/bin/docker run --rm --name k3w-screensaver --env-file /path/to/.env ghcr.io/zaherg/k3w-screensaver:latest screensaver render --output /output/kindle-weather.png
+58 * * * * /usr/bin/docker rm -f k3w-screensaver >/dev/null 2>&1 || true; /usr/bin/docker run --rm --name k3w-screensaver --env-file /path/to/.env ghcr.io/zaherg/k3w-screensaver:main render --output /output/kindle-weather.png
 ```
 If cron can't find Docker, use the full path to `docker` (as above) or set `PATH` in your crontab.
 
